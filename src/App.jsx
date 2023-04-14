@@ -17,7 +17,7 @@ function App() {
 						<Routes>
 							<Route path="/" element={<HomePage />} />
 							<Route path="/results" element={<ResultsPage />} />
-							{/* <Route path="/:ISBN" element={<BookPage />} /> */}
+							<Route path="/:ISBN" element={<BookPage />} />
 						</Routes>
 					</HashRouter>
 				</div>
