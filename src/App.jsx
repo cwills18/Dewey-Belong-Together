@@ -15,9 +15,9 @@ function App() {
 				<div className="App">
 					<HashRouter>
 						<Routes>
-							<Route path="/" element={<HomePage />} />
 							<Route exact path="/results" element={<ResultsPage />} />
 							<Route exact path="/:ISBN" element={<BookPage />} />
+							<Route path="/" element={<HomePage />} />
 						</Routes>
 					</HashRouter>
 				</div>
