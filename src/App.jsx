@@ -1,7 +1,7 @@
 import "./App.scss";
 import "./index.scss";
 import React from "react";
-import { HashRouter, Route, Routes} from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import FindBooksProvider from "./Contexts/FindBooksProvider";
 import SearchTermProvider from "./Contexts/SearchTermProvider";
 import HomePage from "./Containers/HomePage/HomePage";
@@ -17,7 +17,7 @@ function App() {
 						<Routes>
 							<Route path="/" element={<HomePage />} />
 							<Route path="/results" element={<ResultsPage />} />
-							<Route path="/:ISBN" element={<BookPage />} />
+							{/* <Route path="/:ISBN" element={<BookPage />} /> */}
 						</Routes>
 					</HashRouter>
 				</div>
