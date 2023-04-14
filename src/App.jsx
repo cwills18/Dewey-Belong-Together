@@ -14,15 +14,15 @@ function App() {
 			<SearchTermProvider>
 				<div className="App">
 					<HomePage />	
-					<BrowserRouter>
+// 					<BrowserRouter>
 							
-							<Routes>
-								<Route exact path="/results" element={<ResultsPage />} />
-								<Route exact path="/:ISBN" element={<BookPage />} />
-// 								//<Route path="/" element={} />
-							</Routes>
+// 							<Routes>
+// 								<Route exact path="/results" element={<ResultsPage />} />
+// 								<Route exact path="/:ISBN" element={<BookPage />} />
+// // 								//<Route path="/" element={} />
+// 							</Routes>
 		
-					</BrowserRouter>
+// 					</BrowserRouter>
 				</div>
 			</SearchTermProvider>
 		</FindBooksProvider>
