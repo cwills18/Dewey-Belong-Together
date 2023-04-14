@@ -14,5 +14,4 @@ export const getBooksFromSearch = async (searchTerm) => {
 
 /* 	if (results.length < 1) {
 		throw new Error("No books found for search term " + searchTerm);
-	}
-	console.log(results); */
+	}*/
