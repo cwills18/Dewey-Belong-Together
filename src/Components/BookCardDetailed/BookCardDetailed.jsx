@@ -3,12 +3,12 @@ import { FindBooksContext } from "../../Contexts/FindBooksProvider";
 import styles from "./BookCardDetailed.module.scss";
 
 const BookCard_Detailed = () => {
-	const { bookModal } = useContext(FindBooksContext);
-	const { title, subtitle, authors, publishedDate, imageLinks, description, categories, averageRating, ratingsCount, pageCount } = bookModal;
+	/* 	const { bookModal } = useContext(FindBooksContext);
+	const { title, subtitle, authors, publishedDate, imageLinks, description, categories, averageRating, ratingsCount, pageCount } = bookModal; */
 
 	return (
 		<div className={styles.BookCard}>
-			{imageLinks && (
+			{/* 			{imageLinks && (
 				<div className={styles.ImgHolder}>
 					<img src={imageLinks.thumbnail} alt={title} className={styles.ImgHolder_Img} />
 				</div>
@@ -41,7 +41,7 @@ const BookCard_Detailed = () => {
 			{pageCount > 0 && <br />}
 			{pageCount > 0 && <br />}
 			<h5 className={styles.DetailedCardSubHead}>Description: </h5>
-			<p className={styles.Description}>{description ?? "No description available."}</p>
+			<p className={styles.Description}>{description ?? "No description available."}</p> */}
 		</div>
 	);
 };
