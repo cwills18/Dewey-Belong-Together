@@ -11,7 +11,7 @@ This was my first project in React. The goal was to create a book search engine 
 Some of the challenges I faced in this project:
 - Lots and lots of errors caused by minor misdemeanours such as missing imports, typos or using incorrect brackets or words. I gained an appreciation of the specificity of React error feedback, which saved me lots of head scratching. Thankfully, the need to troubleshoot minor issues became less problematic by the end of the project when I was feeling more familiar with React. 
 - Handling API data with various missing values. Because of this, I had lots of practice using ternary statements in React to conditionally render or store information depending on their availability in the source data.
-- I kept trying to set states inside asynchronous functions and spent a great deal of time wondering why everything would work perfectly up until the setState() methods. Hopefully I won't make this mistake again.
+- Deploying to Github was a major hurdle. Initially, I had used BrowserRouter to configure my routes and when github loaded my app, it was loading the expanded view page on a book, which of course threw a gazillion errors because no data had been fetched yet. After many, many hours of trying random vague solutions found on the internet, I eventually found one solution which worked. Which was to replace the BrowserRouter (which is apparently not supported by GitHub) with a HashRouter and update the homepage in the package.json accordingly. This finally fixed the issue and then I was able to focus on minor styling problems that arose in deployment.
 
 To view the project, visit:
 
