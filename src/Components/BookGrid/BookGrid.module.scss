@@ -1,0 +1,28 @@
+.BookGrid {
+	width: 90%;
+	@media only screen and (min-width: 760px) {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+}
+
+.ClickContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	margin-bottom: 5%;
+	@media only screen and (min-width: 760px) and (max-width: 1149px) {
+		width: 48%;
+		margin-bottom: 4%;
+	}
+	@media only screen and (min-width: 1150px) and (max-width: 1599px) {
+		width: 31%;
+		margin-bottom: 3.5%;
+	}
+	@media only screen and (min-width: 1600px) {
+		width: 24%;
+		margin-bottom: 1%;
+	}
+}

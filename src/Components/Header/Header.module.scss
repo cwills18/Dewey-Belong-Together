@@ -1,0 +1,38 @@
+@import "../../Styles/variables.scss";
+
+.Header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&_Logo {
+		width: 40%;
+		margin: 1em 0em 0em;
+		align-self: center;
+		@media only screen and (min-width: 550px) and (max-width: 759px) {
+			margin-top: 2em;
+		}
+		@media only screen and (min-width: 760px) and (max-width: 1149px) {
+			width: 30%;
+			margin-top: 3em;
+		}
+		@media only screen and (min-width: 1150px) {
+			width: 250px;
+			margin-top: 2em;
+		}
+	}
+	&_Subtitle {
+		font-size: 1.2em;
+		color: $dark-blue;
+		font-family: $sans;
+		font-weight: 500;
+		margin-top: 10px;
+		@media only screen and (min-width: 550px) and (max-width: 759px) {
+			margin-top: 20px;
+			font-size: 2em;
+		}
+		@media only screen and (min-width: 760px) {
+			margin-top: 20px;
+			font-size: 1.8em;
+		}
+	}
+}

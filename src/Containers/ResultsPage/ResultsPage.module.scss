@@ -1,0 +1,20 @@
+@import "../../Styles/variables.scss";
+
+.ResultsPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Text {
+	font-family: $sans;
+	color: $dark-blue;
+	font-size: 1em;
+	font-weight: 500;
+	@media only screen and (min-width: 550px) and (max-width: 759px) {
+		font-size: 1.6em;
+	}
+	@media only screen and (min-width: 760px) {
+		font-size: 1.7em;
+	}
+}

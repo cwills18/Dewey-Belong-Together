@@ -1,0 +1,106 @@
+@import "../../Styles/variables.scss";
+
+.BookCard {
+	background-color: white;
+	border: 1.5px solid $med-blue;
+	padding: 1em;
+	margin: 5%;
+	float: left;
+}
+
+.ImgHolder {
+	float: right;
+	margin: 0em 0em 0.5em 1em;
+	justify-self: start;
+	min-height: 80px;
+	@media only screen and (max-width: 300px) {
+		float: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	@media only screen and (min-width: 550px) {
+		float: left;
+		margin: 0em 6em 0.5em 0em;
+	}
+	&_Img {
+		padding: 0.2em;
+		box-shadow: 5px 5px 15px 3px $brown;
+		@media only screen and (max-width: 300px) {
+			margin-bottom: 1em;
+		}
+		@media only screen and (min-width: 550px) {
+			width: 140%;
+		}
+	}
+}
+
+.Title {
+	margin: 0em 0.5em 1em 0em;
+	text-align: center;
+	color: $brown;
+	font-family: $feature;
+	font-size: 1.4em;
+	@media only screen and (max-width: 300px) {
+		margin: 0em 0.5em 1em;
+	}
+	@media only screen and (min-width: 550px) {
+		text-align: left;
+		margin: 0em 0em 1em;
+		font-size: 1.7em;
+	}
+}
+.Subtitle {
+	margin: -1em 0.5em 1em 0em;
+	text-align: center;
+	color: $brown;
+	font-family: $feature;
+	font-size: 1.1em;
+	@media only screen and (max-width: 300px) {
+		margin: -1em 0.5em 1em;
+	}
+	@media only screen and (min-width: 550px) {
+		text-align: left;
+		margin: -1em 0em 1em;
+		font-size: 1.4em;
+	}
+}
+
+.DetailedCardSubHead {
+	display: inline;
+	text-align: center;
+	color: $brown;
+	font-family: $sans;
+	font-weight: 800;
+	font-size: 1em;
+	line-height: 1.3em;
+	@media only screen and (min-width: 550px) {
+		font-size: 1.3em;
+	}
+}
+
+.DetailedCardSubContent {
+	display: inline;
+	text-align: center;
+	color: $brown;
+	font-family: $sans;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.3em;
+	@media only screen and (min-width: 550px) {
+		font-size: 1.3em;
+	}
+}
+
+.Description {
+	color: $brown;
+	font-family: $sans;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.1em;
+	margin-top: 0.5em;
+	@media only screen and (min-width: 550px) {
+		font-size: 1.3em;
+	}
+}

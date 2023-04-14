@@ -1,0 +1,49 @@
+@import "../../Styles/variables.scss";
+
+.SearchBar {
+	display: flex;
+	width: 90%;
+	margin: 1em 0em 5%;
+	@media only screen and (min-width: 550px) and (max-width: 759px) {
+		margin: 2em 0em 2em;
+	}
+	@media only screen and (min-width: 760px) {
+		margin: 3em 0em 3em;
+	}
+	&_Input {
+		width: 82%;
+		border: 1px solid $brown;
+		height: 2.5em;
+		background-color: white;
+		padding: 0px 5px;
+		font-family: $sans;
+		font-size: 1em;
+		@media only screen and (min-width: 550px) and (max-width: 759px) {
+			font-size: 1.2em;
+		}
+		@media only screen and (min-width: 760px) {
+			font-size: 1.4em;
+			width: 90%;
+		}
+	}
+	&_Btn {
+		min-width: 18%;
+		background-color: $sand;
+		border: 1px solid $brown;
+		color: $brown;
+		padding: 0px 4px;
+		font-family: $sans;
+		font-size: 1em;
+		@media only screen and (min-width: 550px) and (max-width: 759px) {
+			font-size: 1.2em;
+		}
+		@media only screen and (min-width: 760px) {
+			font-size: 1.4em;
+			width: 10%;
+		}
+		&:hover {
+			background-color: $brown;
+			color: $sand;
+		}
+	}
+}
