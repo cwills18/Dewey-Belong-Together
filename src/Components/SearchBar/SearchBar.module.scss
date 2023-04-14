@@ -6,9 +6,19 @@
 	margin: 1em 0em 5%;
 	@media only screen and (min-width: 550px) and (max-width: 759px) {
 		margin: 2em 0em 2em;
+		width: 90%;
 	}
-	@media only screen and (min-width: 760px) {
+	@media only screen and (min-width: 760px) and (max-width: 1149px) {
 		margin: 3em 0em 3em;
+		width: 90%;
+	}
+	@media only screen and (min-width: 1150px) and (max-width: 1599px) {
+		margin: 3em 0em 3em;
+		width: 90%;
+	}
+	@media only screen and (min-width: 1600px) {
+		margin: 3em 0em 3em;
+		width: 90%;
 	}
 	&_Input {
 		width: 82%;
@@ -20,8 +30,17 @@
 		font-size: 1em;
 		@media only screen and (min-width: 550px) and (max-width: 759px) {
 			font-size: 1.2em;
+			width: 82%;
 		}
-		@media only screen and (min-width: 760px) {
+		@media only screen and (min-width: 760px) and (max-width: 1149px) {
+			font-size: 1.4em;
+			width: 90%;
+		}
+		@media only screen and (min-width: 1150px) and (max-width: 1599px) {
+			font-size: 1.4em;
+			width: 90%;
+		}
+		@media only screen and (min-width: 1600px) {
 			font-size: 1.4em;
 			width: 90%;
 		}
