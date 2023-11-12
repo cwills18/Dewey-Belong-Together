@@ -13,6 +13,9 @@ Some of the challenges I faced in this project:
 - Handling API data with various missing values. Because of this, I had lots of practice using ternary statements in React to conditionally render or store information depending on their availability in the source data.
 - Deploying to Github was a major hurdle. Initially, I had used BrowserRouter to configure my routes and when github loaded my app, it was loading the expanded view page on a book, which of course threw a gazillion errors because no data had been fetched yet. After many, many hours of trying random vague solutions found on the internet, I eventually found one solution which worked. Which was to replace the BrowserRouter (which is apparently not supported by GitHub) with a HashRouter and update the homepage in the package.json accordingly. This finally fixed the issue and then I was able to focus on minor styling problems that arose in deployment.
 
+Known Bugs:
+- Very occasionally there are still some books which, when clicked in the main search flow, return strange data in the API and/or cause an error in displaying the detailed book information, which results in the dreaded blank page, where the user will be stuck thanks to no back-up plan for failed fetches on specific books yet. I am yet to fix this issue.
+
 To view the project, visit:
 
 https://cwills18.github.io/dewey-belong-together/
